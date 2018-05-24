@@ -1,0 +1,28 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "expect": "^22.4.3",
+    "express": "^4.16.3",
+    "supertest": "^3.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonwang7517/WeWalkThru.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonwang7517/WeWalkThru/issues"
+  },
+  "homepage": "https://github.com/jasonwang7517/WeWalkThru#readme"
+}
