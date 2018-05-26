@@ -12,7 +12,8 @@
     "mocha": "^5.2.0"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "mocha test/**/*.test.js",
+    "test-watch": "nodemon --exec 'npm test'",
     "start": "node server.js"
   },
   "repository": {

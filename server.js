@@ -6,6 +6,7 @@ const app = express();
 app.set("view engine", "html");
 
 app.get('/home', (req, res) => {
+    res.status(200);
     res.sendFile('home.html', { root : VIEWS });
 });
 
