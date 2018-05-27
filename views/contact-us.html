@@ -60,11 +60,11 @@
         <p>Paul Rajan</p>
         <p>CEO</p>
         <p>InterChristian International</p>
-        <form>
-            <input id="formData" type="text" name="Name" require placeholder = "Name"/>
-            <input id="formData" type="text" name="Email" require placeholder = "Email"/>
-            <input id="formData" type="text" name="Subject" require placeholder = "Subect"/>
-            <input id="formData" type="textarea" name="Message" require placeholder = "Message"/>
+        <form method="post" action="/contact-us">
+            <input id="formData" type="text" name="name" require placeholder = "Name"/>
+            <input id="formData" type="text" name="email" require placeholder = "Email"/>
+            <input id="formData" type="text" name="subject" require placeholder = "Subect"/>
+            <input id="formData" type="textarea" name="message" require placeholder = "Message"/>
             <div>
                 <input type="submit" value="Submit"/>
             </div>
