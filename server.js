@@ -118,7 +118,7 @@ app.get('/foodbank', (req, res) => {
 //----------------------------------
 //Contact Us
 //----------------------------------
-app.get('/conact-us', (req, res) => {
+app.get('/contact-us', (req, res) => {
    res.sendFile('conact-us.html', {root:VIEWS}); 
 });
 
