@@ -119,7 +119,7 @@ app.get('/foodbank', (req, res) => {
 //Contact Us
 //----------------------------------
 app.get('/contact-us', (req, res) => {
-   res.sendFile('conact-us.html', {root:VIEWS}); 
+   res.sendFile('contact-us.html', {root:VIEWS}); 
 });
 
 app.get('/donate-501c3', (req, res) => {
