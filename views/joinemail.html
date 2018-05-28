@@ -5,119 +5,9 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="styling.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet">
+        <link rel = "stylesheet" type = "text/css" href = "main.css">
     </head>
-    <style>
-.navbar {
-  margin-right: auto;
-  margin-left: auto;
-  width: 70%;
-  max-width:100%;
-  min-width: 1000px;
-  overflow: hidden;
-  background-color: #333;
-  font-family: Lato, sans-serif;
-}
-
-/* Links inside the navbar */
-.navbar {
-    background-color: white;
-}
-.navbar a {
-  float: left;
-  font-size: 15px;
-  color: rgb(0, 63,127);
-  text-align: center;
-  line-height: 18px;
-  font-weight: 800px;
-  padding: 14px 16px;
-  text-decoration: none;
-  
-  margin-top: 10px;
-  margin-bottom: 10px;
-    
-}
-
-div.dropdown {
-    
-    margin-top: 10px;
-    margin-bottom: 10px;
-    
-}
-
-/* The dropdown container */
-.dropdown, .dropdown2, .donate{
-  float: left;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn, .dropdown2 .dropbtn2, .donate .donantebtn {
-  font-size: 16px; 
-  border: none;
-  outline: none;
-  color: rgb(0, 63,127);
-  font-weight: 800px;
-  line-height: 18px;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn, .dropdown2:hover .dropbtn2 {
-  background-color: white;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content, .dropdown-content2 {
-  display: none;
-  position: absolute;
-  background-color: rgb(195,88,84);
-  min-width: 150px;
-  max-width: 150px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-
-/* Links inside the dropdown */
-.dropdown-content a, .dropdown-content2 a{
-  float: none;
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-}
-        
-
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover, .dropdown2-content a {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content, .dropdown2:hover .dropdown-content2 {
-  display: block;
-}
-
-.donate {
-        float: right;
-        font-size: 16px;
-        background-color: rgb(59,117,183);
-        color: white;
-        text-align: center;
-        padding: 14px;
-        border-radius: 8px;
-        text-decoration: none;
-        margin-right: 30px;
-        margin-top:10px;
-        margin-bottom:10px;
-}
-    
-</style>
     <body>
         <div class="navbar">
             <a href="#">InterChristian</a>
@@ -189,17 +79,19 @@ div.dropdown {
         
        
         <div class="container-fluid">
-       
-        <h1 class = "header">Initiatives International</h1>
-        <h2 class = "subheader">A Membership Movement United To Serve</h2>
-        <p>A 501c3 Tax Exempted Religious Organization</p>
-        <h1 class = "page title">InterChristian News</h1>
-        <h1 class = "body header">Please join InterChristian Mailing List. We want to keep you informed.</h1>
-        <p>Dear Friends, </p>
-        <p>Thank you for taking time to visit our website. We like to stay in touch with you and keep you informed of all the good things that happens because of your good will and prayers. We also like to see if we can be of assistance in your life in any way possible. Whatever "it" is, we want to hear it. Whether you need more information on our Initiatives and Services, want us to reach out to you, your Church and Community, please feel free to write few lines and hit the submit button at the bottom, one of us will be able to call you or email you.</p>
+        <div class = "logo">
+            <img src = "logo.png">
+            <h1 class = "header">Initiatives International</h1>
+            <h2 class = "subheader">A Membership Movement United To Serve</h2>
+            <p>A 501c3 Tax Exempted Religious Organization</p>
+            <h1 id = "page-title">InterChristian News</h1>
+        </div>
+        <h3 class = "body-header">Please join InterChristian Mailing List. We want to keep you informed.</h1>
+        <p class = "letter">Dear Friends, </p>
+        <p class = "letter">Thank you for taking time to visit our website. We like to stay in touch with you and keep you informed of all the good things that happens because of your good will and prayers. We also like to see if we can be of assistance in your life in any way possible. Whatever "it" is, we want to hear it. Whether you need more information on our Initiatives and Services, want us to reach out to you, your Church and Community, please feel free to write few lines and hit the submit button at the bottom, one of us will be able to call you or email you.</p>
         <p>Paul Rajan</p>
         <p>CEO</p>
-        <p>InterChristian International</p>
+        <p class = "signature">InterChristian International</p>
         
          <form>
             Name:<br>
@@ -220,14 +112,17 @@ div.dropdown {
         
     </body>
     <footer>
+        <img src ="logo.png">
         <div class = "copyright">
             <h4>Copyright © InterChristian International</h4>
             <h4>All rights reserved</h4>
         </div>
-        <div class = "contact info">
+        <div class = "mailing">
             <h4>InterChristian International Office:</h4>
             <h4>116 Village Blvd, Suite 200, Princeton, NJ 08540</h4>
             <h4>United States</h4>
+        </div>
+        <div class = "phone">
             <h4>Phone: +1.609.489.5173, Fax: +1.609.489.5174</h4>
             <h4>Email: office@interchristian.org</h4> 
         </div>
