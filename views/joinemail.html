@@ -1,54 +1,195 @@
 <!DOCTYPE HTML>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="styling.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    </head>
+    <style>
+.navbar {
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%;
+  max-width:100%;
+  min-width: 1000px;
+  overflow: hidden;
+  background-color: #333;
+  font-family: Lato, sans-serif;
+}
+
+/* Links inside the navbar */
+.navbar {
+    background-color: white;
+}
+.navbar a {
+  float: left;
+  font-size: 15px;
+  color: rgb(0, 63,127);
+  text-align: center;
+  line-height: 18px;
+  font-weight: 800px;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+  margin-top: 10px;
+  margin-bottom: 10px;
+    
+}
+
+div.dropdown {
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+/* The dropdown container */
+.dropdown, .dropdown2, .donate{
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn, .dropdown2 .dropbtn2, .donate .donantebtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: rgb(0, 63,127);
+  font-weight: 800px;
+  line-height: 18px;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn, .dropdown2:hover .dropbtn2 {
+  background-color: white;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content, .dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: rgb(195,88,84);
+  min-width: 150px;
+  max-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a, .dropdown-content2 a{
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+        
+
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover, .dropdown2-content a {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content, .dropdown2:hover .dropdown-content2 {
+  display: block;
+}
+
+.donate {
+        float: right;
+        font-size: 16px;
+        background-color: rgb(59,117,183);
+        color: white;
+        text-align: center;
+        padding: 14px;
+        border-radius: 8px;
+        text-decoration: none;
+        margin-right: 30px;
+        margin-top:10px;
+        margin-bottom:10px;
+}
+    
+</style>
     <body>
-        <h1 class = "site title">InterChristian</h1>
-        <nav>
-            <a href = "/home.html/">Home</a>
-            <div class="dropdown">
-                <a href = "About.html">About</a>
-                <div class="dropdown-content">
-                    <a href="DreamTeam.html">DreamTeam</a>
-                    <a href="Visionary.html">Visionary</a>
-                    <a href="Newspaper.html">Newspaper</a>
-                    <a href = "Center.html">Center</a>
-                </div>
-            </div>
-            <div class = "dropdown">
-                <a href = "/memberships.html/">Memberships</a>
-                <div class = "dropdown-content">\
-                    <a href = "Council.html">Council</a>
-                    <a href = "CouncilMembership.html">Council Membership</a>
-                    <a href = "Ministers.html">Ministers 2030</a>
-                    <a href = "Leaders.html">Leaders 2030</a>
-                    <a href = "Association.html">Association</a>
-                    <a href = "AssociationMembership.html">Association Membership</a>
-                </div>
-            </div>
-            <div class = "dropdown">
-                <a href = "/initiatives.html/">Initiatives</a>
-                <div class ="dropdown-content">
-                    <a href = "Fellowship.html">Fellowship</a>
-                    <a href = "Festivals.html">Festivals</a>
-                    <a href = "Small%20Groups.html">Small Groups</a>
-                    <a href = "Seminars.html">Seminars</a>
-                    <a href = "Seminary.html">Seminary</a>
-                    <a href = "Institutes.html">Institutes</a>
-                    <a href = "Care.html">Care</a>
-                    <a href = "Build.html">Build</a>
-                    <a href = "Lifeline.html">Lifeline</a>
-                    <a href = "FoodBank.html">FoodBank</a>
-                </div>
-            </div>
-            <div class = "dropdown">
-                <a href = "/contact-us.html/">Contact Us</a>
-                <div class = "dropdown-content">
-                    <a href = "Donate.html">Donate 501C3</a>
-                    <a href = "Privacy.html">Your Privacy</a>
-                    <a href = "Policies.html">Our Policies</a>
-                    <a href = "Email.html">Join Emails</a>
-                </div>
-            </div>
-        </nav>
+        <div class="navbar">
+            <a href="#">InterChristian</a>
+            <a href="#home" class="homebar">HOME</a>
+            
+
+        <div class="dropdown">
+        <button class="dropbtn">ABOUT US 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">DREAMTEAM</a>
+            <a href="#">VISIONARY</a>
+            <a href="#">NEWSPAPER</a>
+            <a href="#">CENTER</a>
+        </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">MEMBERSHIPS 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">COUNCIL</a>
+            <a href="#">COUNCIL MEMBERSHIP</a>
+            <a href="#">MINISTERS 2030</a>
+            <a href="#">LEADERS 2030</a>
+            <a href="#">ASSOCIATION</a>
+            <a href="#">ASSOCIATION MEMBERSHIP</a>
+        </div>
+        </div>
+        <div class="dropdown">
+        <button class="dropbtn">INITIATIVES 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">FELLOWSHIP</a>
+            <a href="#">FESTIVALS</a>
+            <a href="#">SMALL GROUPS</a>
+            <a href="#">SEMINARS</a>
+            <a href="#">SEMINNARS REGISTRATION</a>
+            <a href="#">SEMINARY</a>
+            <a href="#">INSTITUTES</a>
+            <a href="#">CARE</a>
+            <a href="#">BUILD</a>
+            <a href="#">LIFELINE</a>
+            <a href="#">FOODBANK</a>
+        </div>
+        </div>
+        <div class="dropdown">
+        <button class="dropbtn">CONTACT US 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">DONATE 501C3</a>
+            <a href="#">YOUR PRIVACY</a>
+            <a href="#">OUR POLICIES</a>
+            <a href="#">JOIN EMAILS</a>
+        </div>
+        </div>
+        <button class="donate">DONATE</button>
+        
+        
+        </div> 
+        
+
+        
+        
+        
+        
+       
+        <div class="container-fluid">
+       
         <h1 class = "header">Initiatives International</h1>
         <h2 class = "subheader">A Membership Movement United To Serve</h2>
         <p>A 501c3 Tax Exempted Religious Organization</p>
@@ -68,10 +209,15 @@
             Subject:<br>
             <input type="text" name="subject" placeholder="Enter text here"><br>
             Message:<br>
-            <input type="text" name="msg" placeholder="Enter your comments here"><br>
+            <input type="text" name="msg" placeholder="Enter your comments here"><br><br>
              
-            <button type="submit">Submit</button>
+            <button class="btn btn-primary">Submit</button>
         </form> 
+    </div>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        
     </body>
     <footer>
         <div class = "copyright">
