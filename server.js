@@ -9,7 +9,7 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "html");
 
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
     res.status(200);
     res.sendFile('home.html', { root : VIEWS });
 });
@@ -171,8 +171,8 @@ app.get('/our-policy', (req, res) => {
    res.sendFile('our-policy.html', {root:VIEWS}); 
 });
 
-app.get('/join-emails', (req, res) => {
-   res.sendFile('join-emails.html', {root:VIEWS}); 
+app.get('/join-email', (req, res) => {
+   res.sendFile('join-email.html', {root:VIEWS}); 
 });
 
 app.listen(process.env.PORT, process.env.IP, function(){
