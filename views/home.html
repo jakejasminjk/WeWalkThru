@@ -1,81 +1,490 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="styling.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet">
+    </head>
+    <style type="text/css">
+
+.container {
+    background-color: rgb(204, 204, 204);
+    min-width: 1500px;
+    width:100%;
+}
+
+.navbar2 {
+    width: 100%;
+    /*max-width:100%;*/
+    max-width: 1400px;
+    overflow: hidden;
+    background-color: #333;
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    margin-left: 50px;
+    
+}
+.bigtitle {
+    color: rgb(55,125,34);
+}
+/* Links inside the navbar */
+.navbar2 {
+    background-color: white;
+}
+.navbar2 a {
+    float: left;
+    font-size: 15px;
+    color: rgb(0, 63,127);
+    padding-top: 50px;
+    text-align: center;
+    line-height: 18px;
+    font-weight: 800px;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+div.dropdown2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* The dropdown container */
+.dropdown2, .donate{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    float: left;
+    overflow: hidden;
+}
+.navbar2 .homebar {
+    padding-top:45px;
+}
+/* Dropdown button */
+.dropdown2 .dropbtn2, .donate .donantebtn {
+    font-size: 16px; 
+    border: none;
+    outline: none;
+    color: rgb(0, 63,127);
+    font-weight: 800px;
+    line-height: 18px;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin-top: 30px;
+    padding-top:45px;
+    margin-bottom: 10px;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+        
+/* Add a red background color to navbar links on hover */
+.navbar2 a:hover {
+    background-color: gray;
+}
+.dropdown2:hover .dropbtn2 {
+    background-color: white;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: rgb(195,88,84);
+    min-width: 140px;
+    max-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content2 a{
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+        
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a {
+    background-color: #ddd;
+}
+/* Show the dropdown menu on hover */
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+.donate {
+    float: left;
+    font-size: 16px;
+    background-color: rgb(59,117,183);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-right: 55px;
+    margin-top: 35px;
+    margin-bottom:10px;
+    font-family: Lato;
+    margin-left: 20px;
+}
+.header{
+    font-family:Lato;
+    color:white;
+    padding: 0px 0px;
+}
+.subheader{
+    font-family: Lato;
+    font-size: 16px;
+    color:lightgray;
+}
+p {
+    font-family: Lato;
+    font-weight: 400;
+    padding-left: 300px;
+    padding-right: 500px;
+    padding-bottom:0px;
+    padding-top: 0px;
+    margin: 0px;
+}
+.letter {
+    padding: 10px;
+    padding-left: 300px;
+    padding-right: 500px;
+}
+.signature {
+    padding-bottom: 10px;
+}
+form {
+    padding-left: 300px;
+    padding-right: 500px;
+    font-family: Lato;
+    padding-bottom: 100px;
+}
+form input {
+    font-family: Lato;
+    font-size: 18px;
+    height: 35px;
+    width: 300px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+form br {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.foot {
+    width: 100%;
+    height: 50%;
+    max-width: 1300px;
+}
+.container-fluid {
+    width: 100%;
+    height: 50%;
+    max-width: 1300px;
+}
+.logo {
+    width: 100%;
+    height: 50%;
+    max-width: 1400px;
+    padding-bottom: 0px;
+    background-color: rgb(75, 162, 200);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    padding-left: 20px;
+    height: 100%;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border-left: 243px;
+    overflow-x: hidden;
+    margin-left: 50px;
+}
+.btn {
+    color: white;
+}
+
+.logo img {
+    float: right;
+    padding-top: 60px;
+    padding-right: 60px;
+    vertical-align: middle;
+}
+
+.logo h1 {
+    color: rgb(55,125,34);
+    font-weight: bold;
+    font-size: 2em;
+}
+.logo h2 {
+    font-size: 20px;
+    padding-top: 0px;
+    margin-top:0px;
+    color: #6C6C6C;
+    font-weight: bold;
+}
+
+.logo p{
+    font-size: 24px;
+    padding-left: 0px;
+}
+
+.logo h5 {
+    float:right;
+    padding-top:0px;
+    margin-top:-20px;
+    font-family: Lato;
+    padding-right: 70px;
+    font-size: 20px;
+    color: rgb(255, 255, 224);
+    font-weight: bold;
+}
+
+.logo h6 {
+    font-family: Lato;
+    padding-right: 500px;
+    font-size: 15px;
+    padding-top: 15px;
+}
+.logo #page-title {
+    padding-top: 0px;
+    padding-left: 500px;
+    font-size: 36px;
+    font-family: Lato;
+}
+h3 {
+    text-align: center;
+    color: rgb(59, 117, 183);
+    font-weight: 400;
+    font-family: Lato;
+    font-size: 36px;
+}
+footer {
+    padding-top: 10px;
+    background-image: url('http://nebula.wsimg.com/5dd7be0e9ae87db2605889317553ee4f?AccessKeyId=531592D248B589D87A56&disposition=0&alloworigin=1');
+    color: white;
+    font-family: Lato;
+    font-size: 12px;
+    padding-right: 10px;
+    position: relative;
+    padding-left: 10px;
+    overflow-x: hidden;
+}
+footer img {
+    float:left;
+    padding-right: 20px;
+}
+footer .mailing {
+    padding-bottom: 10px;
+    line-height:7px;
+}
+footer .copyright{
+    padding-bottom: 0px;
+    line-height: 9px;
+    float:right;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    padding-right: 10px;
+}
+footer .phone {
+    padding-bottom: 5px;
+    line-height: 7px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 470px);
+    grid-template-rows: repeat(1, 300px);
+    grid-row-gap: 0px;
+    grid-column-gap: 10px;
+    padding-left: 0px;
+    padding-bottom: 100px;
+    overflow-x: hidden;
+    background-color: white;
+    width: 1400px;
+    margin-left: 50px;
+}
+
+.grid .header1 {
+    background-color: #D25050;
+    height: 110px;
+    color: white;
+    width: 480px;
+}
+
+.grid .header2 {
+    background-color: #50d272;
+    height: 110px;
+    width:480px;
+}
+
+.grid .header3 {
+    background-color: #8f50d2;
+    height: 110px;
+    width: 480px;
+}
+.grid h3 {
+    font-size: 20px;
+    color:white;
+    line-height: 10px;
+    padding-top:10px;
+}
+
+.grid p {
+    padding-left: 50px;
+    padding-right: 60px;
+    margin-left: 0px;
+    border-left: 0px;
+    margin-top: -165px;
+    line-height: 18px;
+    margin-right: 250px;
+    padding-right: 250px;
+    width: 650px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.grid .section1 {
+    padding-top:0px;
+    margin-top:0px;
+    border-top: 0px;
+    padding-left: 0px;
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: 20px;
+    text-align: center;
+    width: 10px;
+}
+
+.button {
+    background-color: white;
+    width:1400px;
+    margin-left: 50px;
+}
+
+.learn-more {
+    background-color: #50d272;
+    border: none;
+    color: white;
+    font-family: Lato;
+    font-size: 24px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    margin-left: 600px;
+    height: 60px;
+    width: 250px;
+    margin-bottom: 50px;
+}
+    </style>
 	<body>
-         <h1 class = "site title">InterChristian</h1>
-        <nav>
-            <a href = "/home.html/">Home</a>
-            <div class="dropdown">
-                <a href = "About.html">About</a>
-                <div class="dropdown-content">
-                    <a href="DreamTeam.html">DreamTeam</a>
-                    <a href="Visionary.html">Visionary</a>
-                    <a href="Newspaper.html">Newspaper</a>
-                    <a href = "Center.html">Center</a>
-                </div>
+    <div class = "container">
+      <div class="navbar2">
+            <div class="bigtitle">
+                <a href="#"><h1 class="bigtitle"><strong>InterChristian</strong></h1></a>
             </div>
-            <div class = "dropdown">
-                <a href = "/memberships.html/">Memberships</a>
-                <div class = "dropdown-content">\
-                    <a href = "Council.html">Council</a>
-                    <a href = "CouncilMembership.html">Council Membership</a>
-                    <a href = "Ministers.html">Ministers 2030</a>
-                    <a href = "Leaders.html">Leaders 2030</a>
-                    <a href = "Association.html">Association</a>
-                    <a href = "AssociationMembership.html">Association Membership</a>
-                </div>
-            </div>
-            <div class = "dropdown">
-                <a href = "/initiatives.html/">Initiatives</a>
-                <div class ="dropdown-content">
-                    <a href = "Fellowship.html">Fellowship</a>
-                    <a href = "Festivals.html">Festivals</a>
-                    <a href = "Small%20Groups.html">Small Groups</a>
-                    <a href = "Seminars.html">Seminars</a>
-                    <a href = "Seminary.html">Seminary</a>
-                    <a href = "Institutes.html">Institutes</a>
-                    <a href = "Care.html">Care</a>
-                    <a href = "Build.html">Build</a>
-                    <a href = "Lifeline.html">Lifeline</a>
-                    <a href = "FoodBank.html">FoodBank</a>
-                </div>
-            </div>
-            <div class = "dropdown">
-                <a href = "/contact-us.html/">Contact Us</a>
-                <div class = "dropdown-content">
-                    <a href = "Donate.html">Donate 501C3</a>
-                    <a href = "Privacy.html">Your Privacy</a>
-                    <a href = "Policies.html">Our Policies</a>
-                    <a href = "Email.html">Join Emails</a>
-                </div>
-            </div>
-        </nav>
-		<h1 class = "header">Initiatives International</h1>
-		<h2 class = "subheader">A Membership Movement United to Serve</h2>
-		<p>InterChristian Initiatives International is a worldwide membership movement 
-that connects Christian believers from around the world to serve the world in 
-unity and fulfill the great commission of the Lord Jesus Christ as one body. 
-InterChristian International initiates several programs and projects for its 
-members to fulfill the vision of the Lord Jesus Christ. Membership is open for 
-individuals to Institutions irrespective of denominations. The mission of 
-InterChristian International is to help the Believers, Churches, Ministry
-Professionals, Missional Institutions, Seminaries and Bible Colleges, and NGOs
-of healthcare, social, justice, and educational sectors to envision and
-network.</p>
-  <h6 class = "donor warning"> WARNING FOR DONORS: Dear Donors, Please note that some people have misused our gateway that is meant to donate exclusively to InterChristian Activities and we are not responsible for such activities. We use our gateway to collect genuine donation and will send you receipt upon the credit into our bank accounts. Once it is credited into our account the money will not be returned. </h6>
-        <div class = "section 1">
-            <h3>InterChristian Society</h3> 
-            <h3>A Mandate</h3>
-            <p>InterChristian International initiates several programs and projects in order to fulfill the vision of bringing the believers to live a life in fullness and in one accord. Church is a ministry and Institution. We are invited to experience the divine love, peace and joy in celebration of the togetherness as Believers. The InterChristian Society is a ministry to help the believers to envision the relationship, resources, responsibility and the rewards promised at the end of our life.</p>
-       </div>
-        <div class = "section 2">
-            <h3>InterChrist Seminar</h3>
-            <h3>A Ministry</h3>
-            <p>InterChristian International initiates several Educational programs beginning from InterChristian Seminars to InterChristian Seminary to teach the vision of the mission of the Kingdom of God as per the great commission. Education is the key to have a vision and then fulfill it as a mission with our life experiences. We are mandated to go and preach, teach and make disciple for the purpose of the Kingdom.</p>
+            <a href="#home" class="homebar">HOME</a>
+        <div class="dropdown2">
+        <button class="dropbtn2">ABOUT US 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content2">
+            <a href="#">DREAMTEAM</a>
+            <a href="#">VISIONARY</a>
+            <a href="#">NEWSPAPER</a>
+            <a href="#">CENTER</a>
         </div>
-        <div class = "section 3">
-            <h3>InterChristian Service</h3>
-            <h3>A Mission</h3>
-            <p>InterChristian International initiates several worldwide service program and projects. We train and position personals who would involve in serving their own community holistically. Implementing various Social Care Projects, establishing educational Institutions, financial empowerment projects and health care services are the plan of action which would ensure a lifetime of smiles in the life of those in need of care.</p>
+        </div>
+        <div class="dropdown2">
+            <button class="dropbtn2">MEMBERSHIPS 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content2">
+            <a href="#">COUNCIL</a>
+            <a href="#">COUNCIL MEMBERSHIP</a>
+            <a href="#">MINISTERS 2030</a>
+            <a href="#">LEADERS 2030</a>
+            <a href="#">ASSOCIATION</a>
+            <a href="#">ASSOCIATION MEMBERSHIP</a>
+        </div>
+        </div>
+        <div class="dropdown2">
+        <button class="dropbtn2">INITIATIVES 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content2">
+            <a href="#">FELLOWSHIP</a>
+            <a href="#">FESTIVALS</a>
+            <a href="#">SMALL GROUPS</a>
+            <a href="#">SEMINARS</a>
+            <a href="#">SEMINNARS REGISTRATION</a>
+            <a href="#">SEMINARY</a>
+            <a href="#">INSTITUTES</a>
+            <a href="#">CARE</a>
+            <a href="#">BUILD</a>
+            <a href="#">LIFELINE</a>
+            <a href="#">FOODBANK</a>
+        </div>
+        </div>
+        <div class="dropdown2">
+        <button class="dropbtn2">CONTACT US 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content2">
+            <a href="#">DONATE 501C3</a>
+            <a href="#">YOUR PRIVACY</a>
+            <a href="#">OUR POLICIES</a>
+            <a href="#">JOIN EMAILS</a>
+        </div>
+        </div>
+        <button class="donate">DONATE</button>
+        </div>
+        <div class = "logo">
+            <img src = "http://nebula.wsimg.com/2ef6cf8437299c8413d38fe35c5f6681?AccessKeyId=0EB55C264061E955F24A&disposition=0&alloworigin=1">
+            <h1 class = "header">Initiatives International</h1>
+            <h2 class = "subheader">A Membership Movement United To Serve</h2>    
+            <p>InterChristian Initiatives International is a worldwide membership movement 
+            that connects Christian believers from around the world to serve the world in 
+            unity and fulfill the great commission of the Lord Jesus Christ as one body. 
+            InterChristian International initiates several programs and projects for its 
+            members to fulfill the vision of the Lord Jesus Christ. Membership is open for 
+            individuals to Institutions irrespective of denominations. The mission of 
+            InterChristian International is to help the Believers, Churches, Ministry
+            Professionals, Missional Institutions, Seminaries and Bible Colleges, and NGOs
+            of healthcare, social, justice, and educational sectors to envision and
+            network.</p>
+             <h6 class = "donor warning"> WARNING FOR DONORS: Dear Donors, Please note that some people have misused our gateway that is meant to donate exclusively to InterChristian Activities and we are not responsible for such activities. We use our gateway to collect genuine donation and will send you receipt upon the credit into our bank accounts. Once it is credited into our account the money will not be returned. </h6>
+            <h5>A 501c3 Tax Exempt Organization</h5>
+        </div>
+        <div class = "grid">
+            <div class = "header1">
+                <h3>InterChristian Society</h3> 
+                <h3>A Mandate</h3>
+            </div>
+            <div class = "header2">
+                <h3>InterChrist Seminar</h3>
+                <h3>A Ministry</h3>
+            </div>
+            <div class = "header3">
+                <h3>InterChristian Service</h3>
+                <h3>A Mission</h3>
+            </div>
+            <div class = "section1">
+                <p>InterChristian International initiates several programs and projects in order to fulfill the vision of bringing the believers to live a life in fullness and in one accord. Church is a ministry and Institution. We are invited to experience the divine love, peace and joy in celebration of the togetherness as Believers. The InterChristian Society is a ministry to help the believers to envision the relationship, resources, responsibility and the rewards promised at the end of our life.</p>
+            </div>
+            <div class = "section2">
+                <p>InterChristian International initiates several Educational programs beginning from InterChristian Seminars to InterChristian Seminary to teach the vision of the mission of the Kingdom of God as per the great commission. Education is the key to have a vision and then fulfill it as a mission with our life experiences. We are mandated to go and preach, teach and make disciple for the purpose of the Kingdom.</p>
+            </div>
+            <div class = "section3">
+                <p>InterChristian International initiates several worldwide service program and projects. We train and position personals who would involve in serving their own community holistically. Implementing various Social Care Projects, establishing educational Institutions, financial empowerment projects and health care services are the plan of action which would ensure a lifetime of smiles in the life of those in need of care.</p>
+            </div>
+        </div>
+        <div class = "button">
+        <a href = "/about-us.html"> 
+            <button type = "button" class = "learn-more ">Learn More</button>
+        </a>
+        </div>
         </div>
   </body>
     <footer>
