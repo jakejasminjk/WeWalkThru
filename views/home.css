@@ -3,6 +3,7 @@
     min-width: 1500px;
     width:100%;
 }
+
 .navbar2 {
     width: 100%;
     /*max-width:100%;*/
@@ -68,7 +69,7 @@ div.dropdown2 {
         
 /* Add a red background color to navbar links on hover */
 .navbar2 a:hover {
-    background-color: gray;
+    background-color: white;
 }
 .dropdown2:hover .dropbtn2 {
     background-color: white;
@@ -191,12 +192,14 @@ form br {
 .btn {
     color: white;
 }
+
 .logo img {
     float: right;
     padding-top: 60px;
     padding-right: 60px;
     vertical-align: middle;
 }
+
 .logo h1 {
     color: rgb(55,125,34);
     font-weight: bold;
@@ -209,10 +212,12 @@ form br {
     color: #6C6C6C;
     font-weight: bold;
 }
+
 .logo p{
     font-size: 24px;
     padding-left: 0px;
 }
+
 .logo h5 {
     float:right;
     padding-top:0px;
@@ -223,6 +228,7 @@ form br {
     color: rgb(255, 255, 224);
     font-weight: bold;
 }
+
 .logo h6 {
     font-family: Lato;
     padding-right: 500px;
@@ -274,6 +280,7 @@ footer .phone {
     padding-bottom: 5px;
     line-height: 7px;
 }
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 470px);
@@ -287,17 +294,20 @@ footer .phone {
     width: 1400px;
     margin-left: 50px;
 }
+
 .grid .header1 {
     background-color: #D25050;
     height: 110px;
     color: white;
     width: 480px;
 }
+
 .grid .header2 {
     background-color: #50d272;
     height: 110px;
     width:480px;
 }
+
 .grid .header3 {
     background-color: #8f50d2;
     height: 110px;
@@ -309,6 +319,7 @@ footer .phone {
     line-height: 10px;
     padding-top:10px;
 }
+
 .grid p {
     padding-left: 50px;
     padding-right: 60px;
@@ -322,6 +333,7 @@ footer .phone {
     text-align: center;
     font-size: 14px;
 }
+
 .grid .section1 {
     padding-top:0px;
     margin-top:0px;
@@ -333,11 +345,13 @@ footer .phone {
     text-align: center;
     width: 10px;
 }
+
 .button {
     background-color: white;
     width:1400px;
     margin-left: 50px;
 }
+
 .learn-more {
     background-color: #50d272;
     border: none;
