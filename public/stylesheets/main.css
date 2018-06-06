@@ -1,5 +1,4 @@
-
-.navbar {
+.navbar2 {
     margin-right: auto;
     margin-left: auto;
     width: 70%;
@@ -11,12 +10,16 @@
     font-weight: 900;
 }
 
+.bigtitle {
+    color: rgb(55,125,34);
+}
+
 /* Links inside the navbar */
-.navbar {
+.navbar2 {
     background-color: white;
 }
 
-.navbar a {
+.navbar2 a {
     float: left;
     font-size: 15px;
     color: rgb(0, 63,127);
@@ -30,19 +33,21 @@
     
 }
 
-div.dropdown {
+div.dropdown2 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 /* The dropdown container */
-.dropdown, .dropdown2, .donate{
+.dropdown2, .donate{
+    margin-top: 100px;
+    margin-bottom: 10px;
     float: left;
     overflow: hidden;
 }
 
 /* Dropdown button */
-.dropdown .dropbtn, .dropdown2 .dropbtn2, .donate .donantebtn {
+.dropdown2 .dropbtn2, .donate .donantebtn {
     font-size: 16px; 
     border: none;
     outline: none;
@@ -51,28 +56,34 @@ div.dropdown {
     line-height: 18px;
     padding: 14px 16px;
     background-color: inherit;
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn, .dropdown2:hover .dropbtn2 {
+.navbar2 a:hover {
+    background-color: gray;
+}
+
+.dropdown2:hover .dropbtn2 {
     background-color: white;
 }
 
 /* Dropdown content (hidden by default) */
-.dropdown-content, .dropdown-content2 {
+.dropdown-content2 {
     display: none;
     position: absolute;
     background-color: rgb(195,88,84);
-    min-width: 150px;
-    max-width: 150px;
+    min-width: 140px;
+    max-width: 140px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 /* Links inside the dropdown */
-.dropdown-content a, .dropdown-content2 a{
+.dropdown-content2 a{
     float: none;
     color: white;
     padding: 12px 16px;
@@ -82,12 +93,12 @@ div.dropdown {
 }
         
 /* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover, .dropdown2-content a {
+.dropdown-content a {
     background-color: #ddd;
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content, .dropdown2:hover .dropdown-content2 {
+.dropdown2:hover .dropdown-content2 {
     display: block;
 }
 
@@ -100,8 +111,8 @@ div.dropdown {
     padding: 14px;
     border-radius: 8px;
     text-decoration: none;
-    margin-right: 30px;
-    margin-top:10px
+    margin-right: 55px;
+    margin-top: 35px;
     margin-bottom:10px;
     font-family: Lato;
 }
@@ -109,7 +120,6 @@ div.dropdown {
 .header{
     font-family:Lato;
     color:white;
-    background-color: rgb(59, 117, 183);
     padding: 0px 0px;
 }
 
@@ -117,7 +127,6 @@ div.dropdown {
     font-family: Lato;
     font-size: 16px;
     color:lightgray;
-    background-color: rgb(59, 117, 183);
 }
 
 p {
@@ -160,14 +169,31 @@ form br {
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
-
+.foot {
+    width: 100%;
+    height: 50%;
+    min-width: 1300px;
+}
+.container-fluid {
+    width: 100%;
+    height: 50%;
+    min-width: 1300px;
+}
 .logo {
+    width: 100%;
+    height: 50%;
+    min-width: 1300px;
     padding-bottom: 0px;
-    background-color: rgb(59, 117, 183);
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
     color: white;
     padding-left: 100px;
     height: 100%;
     padding-top: 10px;
+}
+.btn {
+    color: white;
 }
 
 .logo p {
