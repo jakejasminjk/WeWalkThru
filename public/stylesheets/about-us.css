@@ -13,7 +13,6 @@
     font-family: Lato, sans-serif;
     font-weight: 900;
     margin-left: 50px;
-    
 }
 .bigtitle {
     color: rgb(55,125,34);
@@ -370,6 +369,7 @@ form br {
     text-align: center;
     padding-bottom: 30px;
 }
+
 footer {
     padding-top: 10px;
     background-image: url('http://nebula.wsimg.com/5dd7be0e9ae87db2605889317553ee4f?AccessKeyId=531592D248B589D87A56&disposition=0&alloworigin=1');
@@ -380,15 +380,21 @@ footer {
     position: relative;
     padding-left: 10px;
     overflow-x: hidden;
+    width: 100%;
+    max-width: 1400px;
+    margin-left: 50px;
 }
+
 footer img {
     float:left;
     padding-right: 20px;
 }
+
 footer .mailing {
     padding-bottom: 10px;
     line-height:7px;
 }
+
 footer .copyright{
     padding-bottom: 0px;
     line-height: 9px;
@@ -398,6 +404,7 @@ footer .copyright{
     position: absolute;
     padding-right: 10px;
 }
+
 footer .phone {
     padding-bottom: 5px;
     line-height: 7px;
