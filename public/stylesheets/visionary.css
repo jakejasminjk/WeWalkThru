@@ -302,6 +302,16 @@ form br {
     padding-bottom: 5px;
 }
 
+.dream {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 20px;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-size: 16px;
+}
+
 .body {
     padding-top: 15px;
     font-family: Lato;
