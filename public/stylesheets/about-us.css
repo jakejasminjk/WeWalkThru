@@ -296,9 +296,9 @@ form br {
     padding-top: 15px;
     font-family: Lato;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 22px;
     width: 1400px;
-    text-align: center;
+    text-align: left;
     margin-left: 0px auto;
     padding-left: 300px;
     padding-right: 300px;
@@ -365,8 +365,8 @@ form br {
     margin: 0px auto;
     padding-left: 300px;
     padding-right: 300px;
-    font-size: 14px;
-    text-align: center;
+    font-size: 16px;
+    text-align: left;
     padding-bottom: 30px;
 }
 
