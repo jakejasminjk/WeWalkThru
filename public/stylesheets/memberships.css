@@ -1,0 +1,366 @@
+.container {
+    background-color: rgb(204, 204, 204);
+    min-width: 1500px;
+    width:100%;
+}
+
+.navbar2 {
+    width: 100%;
+    /*max-width:100%;*/
+    max-width: 1400px;
+    overflow: hidden;
+    background-color: #333;
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    margin-left: 50px;
+    
+}
+.bigtitle {
+    color: rgb(55,125,34);
+}
+/* Links inside the navbar */
+.navbar2 {
+    background-color: white;
+}
+.navbar2 a {
+    float: left;
+    font-size: 15px;
+    color: rgb(0, 63,127);
+    padding-top: 50px;
+    text-align: center;
+    line-height: 18px;
+    font-weight: 800px;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+div.dropdown2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* The dropdown container */
+.dropdown2, .donate{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    float: left;
+    overflow: hidden;
+}
+.navbar2 .homebar {
+    padding-top:45px;
+}
+/* Dropdown button */
+.dropdown2 .dropbtn2, .donate .donantebtn {
+    font-size: 16px; 
+    border: none;
+    outline: none;
+    color: rgb(0, 63,127);
+    font-weight: 800px;
+    line-height: 18px;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin-top: 30px;
+    padding-top:45px;
+    margin-bottom: 10px;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+        
+/* Add a red background color to navbar links on hover */
+.navbar2 a:hover {
+    background-color: white;
+}
+.dropdown2:hover .dropbtn2 {
+    background-color: white;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: rgb(195,88,84);
+    min-width: 140px;
+    max-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content2 a{
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+        
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a {
+    background-color: #ddd;
+}
+/* Show the dropdown menu on hover */
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+.donate {
+    float: left;
+    font-size: 16px;
+    background-color: rgb(59,117,183);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-right: 55px;
+    margin-top: 35px;
+    margin-bottom:10px;
+    font-family: Lato;
+    margin-left: 20px;
+}
+.header{
+    font-family:Lato;
+    color:white;
+    padding: 0px 0px;
+}
+.subheader{
+    font-family: Lato;
+    font-size: 16px;
+    color:lightgray;
+}
+p {
+    font-family: Lato;
+    font-weight: 400;
+    padding-left: 300px;
+    padding-right: 500px;
+    padding-bottom:0px;
+    padding-top: 0px;
+    margin: 0px;
+}
+.letter {
+    padding: 10px;
+    padding-left: 300px;
+    padding-right: 500px;
+}
+.signature {
+    padding-bottom: 10px;
+}
+form {
+    padding-left: 300px;
+    padding-right: 500px;
+    font-family: Lato;
+    padding-bottom: 100px;
+}
+form input {
+    font-family: Lato;
+    font-size: 18px;
+    height: 35px;
+    width: 300px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+form br {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.foot {
+    width: 100%;
+    height: 50%;
+    max-width: 1300px;
+}
+.container-fluid {
+    width: 100%;
+    height: 50%;
+    max-width: 1300px;
+}
+.logo {
+    width: 100%;
+    height: 50%;
+    max-width: 1400px;
+    padding-bottom: 0px;
+    background-image: url(http://nebula.wsimg.com/5dd7be0e9ae87db2605889317553ee4f?AccessKeyId=531592D248B589D87A56&disposition=0&alloworigin=1);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    padding-left: 20px;
+    height: 100%;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border-left: 243px;
+    overflow-x: hidden;
+    margin-left: 50px;
+}
+.btn {
+    color: white;
+}
+
+.logo img {
+    float: left;
+    padding-top: 60px;
+    padding-right: 60px;
+    vertical-align: middle;
+    width: 170px;
+    height: 170px;
+    margin-top: -60px;
+}
+
+.logo h1 {
+    color: rgb(55,125,34);
+    font-weight: bold;
+    font-size: 2em;
+}
+.logo h2 {
+    font-size: 20px;
+    padding-top: 0px;
+    margin-top:0px;
+    color: #6C6C6C;
+    font-weight: bold;
+    margin-left: 0px;
+}
+
+.logo p{
+    font-size: 24px;
+    padding-left: 0px;
+}
+
+.logo h4 {
+    font-family: Lato;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 70px;
+    text-align: left;
+    margin-left: 0px;
+}
+
+.logo .body-header {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Lato;
+    padding-left: 300px;
+    text-align: center;
+    padding-right: 300px
+}
+
+.logo h5 {
+    float:right;
+    padding-top:0px;
+    margin-top:-20px;
+    font-family: Lato;
+    padding-right: 70px;
+    font-size: 20px;
+    color: rgb(255, 255, 224);
+    font-weight: bold;
+}
+
+.logo h6 {
+    font-family: Lato;
+    padding-right: 500px;
+    font-size: 15px;
+    padding-top: 15px;
+}
+.logo #page-title {
+    padding-top: 0px;
+    padding-left: 500px;
+    font-size: 36px;
+    font-family: Lato;
+}
+
+.logo .tax {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.header2 {
+    padding-top: 25px;
+    line-height: 60px;
+    font-family: Lato;
+    font-size: 48px;
+    margin-left: 0px;
+    color: #50abd2;
+    background-color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    margin-top: 9px;
+}
+
+.center {
+    font-family: Lato;
+    font-size: 24px;
+    color: #FF0000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.body-container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: white;
+    width: 1400px;
+    margin-left: 50px;
+    margin-top: -32px;
+    margin-bottom: 0px;
+}
+
+.body {
+    padding-top: 15px;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 20px;
+    width: 1400px;
+    text-align: center;
+    margin-left: 0px auto;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 15px;
+}
+
+.franchise {
+    font-family: Lato;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+}
+
+footer {
+    padding-top: 10px;
+    background-image: url('http://nebula.wsimg.com/5dd7be0e9ae87db2605889317553ee4f?AccessKeyId=531592D248B589D87A56&disposition=0&alloworigin=1');
+    color: white;
+    font-family: Lato;
+    font-size: 12px;
+    padding-right: 10px;
+    position: relative;
+    padding-left: 10px;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 1400px;
+    margin-left: 50px;
+}
+
+footer img {
+    float:left;
+    padding-right: 20px;
+}
+
+footer .mailing {
+    padding-bottom: 10px;
+    line-height:7px;
+}
+
+footer .copyright{
+    padding-bottom: 0px;
+    line-height: 9px;
+    float:right;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    padding-right: 10px;
+}
+
+footer .phone {
+    padding-bottom: 5px;
+    line-height: 7px;
+}
