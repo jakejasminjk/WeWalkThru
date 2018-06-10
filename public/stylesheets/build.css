@@ -292,9 +292,6 @@ form br {
     color: #FF0000;
     font-weight: bold;
     text-align: center;
-    padding-top: 15px;
-    margin-top: 10px;
-    line-height: 48px;
 }
 
 .body-container {
@@ -320,13 +317,6 @@ form br {
     padding-bottom: 15px;
 }
 
-.verse {
-    text-align: right;
-    font-size: 24px;
-    padding-right: 350px;
-    font-weight: bold;
-}
-
 .franchise {
     font-family: Lato;
     font-style: italic;
@@ -336,33 +326,39 @@ form br {
     font-size: 16px;
 }
 
-.benefits {
-    font-family: Lato;
-    font-size: 20px;
-    text-align: center;
+.verse {
+    text-align: right;
+    font-size: 24px;
+    padding-right: 350px;
+    font-weight: bold;
 }
 
-.list {
-    padding-top: 15px;
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 20px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: repeat(1, 450px);
+    grid-row-gap: 0px;
+    grid-column-gap: 20px;
+    padding-bottom: 0px;
+    overflow-x: hidden;
+    margin-bottom 0px;
+    background-color: white;
     width: 1000px;
-    text-align: left;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
-li {
-    padding-bottom: 5px;
-}
-
-.apply {
-    font-family: Lato;
+.grid img {
+    border: 5px solid #50abd2;
+    height: 400px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    padding-bottom: 0px;
+    align-content: center;
+    justify-content: center;
 }
 
 footer {

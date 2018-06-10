@@ -235,9 +235,9 @@ form br {
     margin-left: auto;
     margin-right: auto;
     font-family: Lato;
-    padding-left: 300px;
+    padding-left: 200px;
     text-align: center;
-    padding-right: 300px
+    padding-right: 200px
 }
 
 .logo h5 {
@@ -292,9 +292,16 @@ form br {
     color: #FF0000;
     font-weight: bold;
     text-align: center;
-    padding-top: 15px;
-    margin-top: 10px;
-    line-height: 48px;
+}
+
+.center2 {
+    font-family: Lato;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .body-container {
@@ -320,11 +327,17 @@ form br {
     padding-bottom: 15px;
 }
 
-.verse {
-    text-align: right;
-    font-size: 24px;
-    padding-right: 350px;
-    font-weight: bold;
+.event {
+    padding-top: 15px;
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 20px;
+    width: 1400px;
+    text-align: left;
+    margin-left: 0px auto;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 15px;
 }
 
 .franchise {
@@ -336,33 +349,52 @@ form br {
     font-size: 16px;
 }
 
-.benefits {
+.verse {
+    text-align: right;
+    font-size: 24px;
+    padding-right: 350px;
+    font-weight: bold;
+}
+
+hr {
+    border-top: 1px solid black;
+    width: 1000px;
+}
+
+.date {
     font-family: Lato;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
+    color: #FF0000;
+    padding-top: 20px;
 }
 
-.list {
-    padding-top: 15px;
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 20px;
-    width: 1000px;
-    text-align: left;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(1, 350px);
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    padding-bottom: 0px;
+    overflow-x: hidden;
+    margin-bottom 0px;
+    background-color: white;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
-li {
-    padding-bottom: 5px;
-}
-
-.apply {
-    font-family: Lato;
+.grid img {
+    border: 5px solid #50abd2;
+    height: 350px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    padding-bottom: 0px;
+    align-content: center;
+    justify-content: center;
 }
 
 footer {

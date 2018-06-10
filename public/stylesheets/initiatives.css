@@ -235,9 +235,9 @@ form br {
     margin-left: auto;
     margin-right: auto;
     font-family: Lato;
-    padding-left: 300px;
+    padding-left: 250px;
     text-align: center;
-    padding-right: 300px
+    padding-right: 250px
 }
 
 .logo h5 {
@@ -324,41 +324,6 @@ form br {
     padding-bottom: 15px;
     margin-bottom: 0px;
     font-size: 16px;
-}
-
-.verse {
-    text-align: right;
-    font-size: 24px;
-    padding-right: 350px;
-    font-weight: bold;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(1, 350px);
-    grid-row-gap: 0px;
-    grid-column-gap: 0px;
-    padding-bottom: 0px;
-    overflow-x: hidden;
-    margin-bottom 0px;
-    background-color: white;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0px;
-}
-
-.grid img {
-    border: 5px solid #50abd2;
-    height: 350px;
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-bottom: 0px;
-    align-content: center;
-    justify-content: center;
 }
 
 footer {
