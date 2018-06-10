@@ -1,5 +1,5 @@
 .container {
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(255, 255, 255);
     min-width: 1500px;
     width:100%;
 }
@@ -365,4 +365,8 @@ footer .phone {
     height: 60px;
     width: 250px;
     margin-bottom: 50px;
+}
+
+#about{
+    display: inline;
 }
