@@ -50,7 +50,7 @@ app.get('/council', (req,res) => {
     res.sendFile('council.html', {root : VIEWS});
 });
 
-app.get('/council-membership', (req,res) => {
+app.get('/councilmembership.html', (req,res) => {
     res.sendFile('council-membership.html', {root : VIEWS});
 });
 
@@ -158,7 +158,7 @@ app.get('/care', (req, res) => {
     res.sendFile('care.html', {root: VIEWS});
 });
 
-app.get('/build', (req, res) => {
+app.get('/build.html', (req, res) => {
     res.sendFile('build.html', {root: VIEWS});
 });
 
