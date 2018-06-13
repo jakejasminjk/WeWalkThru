@@ -50,9 +50,58 @@ app.get('/council', (req,res) => {
     res.sendFile('council.html', {root : VIEWS});
 });
 
-app.get('/councilmembership.html', (req,res) => {
+app.get('/council-membership', (req,res) => {
     res.sendFile('council-membership.html', {root : VIEWS});
 });
+
+app.post('/council-membership', (req,res) => {
+    let name = req.body.name;
+    let clientEmail = req.body.email;
+    let phone = req.body.phone;
+    let address = req.body.address;
+    let cityCountry = req.body.cityCountry;
+    let churchPosition = req.body.churchPosition;
+    let chooseSem = req.body.chooseSem;
+    
+    //files
+    let passport = req.body.passport;
+    let photo = req.body.photo;
+    
+    let ministerRef = req.body.ministerRef;
+    let neighborRef = req.body.neighborRef;
+    
+    let to = 'CLIENT EMAIL';
+    let transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'NEED CLIENTS USERNAME',
+    pass: 'NEED CLIENTS EMAIL PASSWORD'
+  }
+});
+    let mailOptions = {
+        from: clientEmail,
+        to: to, 
+        subject: `Council registration from ${name}, ${clientEmail}`,
+        text: `Phone number: ${phone}, Address: ${address}, City and Country: ${cityCountry}, 
+        Church and Position: ${churchPosition}, Chosen Seminar Date: ${chooseSem}`,
+        attachments: {   // stream as an attachment
+        filename: 'text4.txt',
+        content: fs.createReadStream('file.txt')
+    }
+    }
+    
+    transporter.sendMail(mailOptions, function(error, response){
+        if(error){
+            console.log(error);
+            res.redirect('/council-membership');
+        }else{
+            res.redirect('/home');
+        }
+    });
+    
+ 
+
+})
 
 app.get('/ministers-2030', (req,res) => {
     res.sendFile('ministers-2030.html', {root : VIEWS});
@@ -69,6 +118,55 @@ app.get('/association', (req,res) => {
 app.get('/association-membership', (req,res) => {
     res.sendFile('association-membership.html', {root : VIEWS});
 });
+
+app.post('/association-membership', (req,res) => {
+    let name = req.body.name;
+    let clientEmail = req.body.email;
+    let phone = req.body.phone;
+    let address = req.body.address;
+    let cityCountry = req.body.cityCountry;
+    let churchPosition = req.body.churchPosition;
+    let chooseSem = req.body.chooseSem;
+    
+    //files
+    let passport = req.body.passport;
+    let photo = req.body.photo;
+    
+    let ministerRef = req.body.ministerRef;
+    let neighborRef = req.body.neighborRef;
+    
+    let to = 'CLIENT EMAIL';
+    let transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'NEED CLIENTS USERNAME',
+    pass: 'NEED CLIENTS EMAIL PASSWORD'
+  }
+});
+    let mailOptions = {
+        from: clientEmail,
+        to: to, 
+        subject: `Association registration from ${name}, ${clientEmail}`,
+        text: `Phone number: ${phone}, Address: ${address}, City and Country: ${cityCountry}, 
+        Church and Position: ${churchPosition}, Chosen Seminar Date: ${chooseSem}`,
+        attachments: {   // stream as an attachment
+        filename: 'text4.txt',
+        content: fs.createReadStream('file.txt')
+    }
+    }
+    
+    transporter.sendMail(mailOptions, function(error, response){
+        if(error){
+            console.log(error);
+            res.redirect('/association-membership');
+        }else{
+            res.redirect('/home');
+        }
+    });
+    
+ 
+
+})
 
 //----------------------------------
 //INITIATIVES
@@ -158,7 +256,7 @@ app.get('/care', (req, res) => {
     res.sendFile('care.html', {root: VIEWS});
 });
 
-app.get('/build.html', (req, res) => {
+app.get('/build', (req, res) => {
     res.sendFile('build.html', {root: VIEWS});
 });
 

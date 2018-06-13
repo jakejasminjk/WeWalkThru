@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link href="styling.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet">
@@ -76,7 +76,7 @@
        
         <div class="container-fluid">
         <div class = "logo">
-            <img src = "logo.png">
+            <img src = "http://nebula.wsimg.com/2ef6cf8437299c8413d38fe35c5f6681?AccessKeyId=0EB55C264061E955F24A&disposition=0&alloworigin=1">
             <h1 class = "header">Initiatives International</h1>
             <h2 class = "subheader">A Membership Movement United To Serve</h2>
             <p>A 501c3 Tax Exempted Religious Organization</p>
@@ -89,7 +89,7 @@
         <p class="placing">CEO</p>
         <p class="signature">InterChristian International</p><br>
         
-         <form class="regularForm">
+         <form class="regularForm" mehtod = "post" action = "/council-membership.html">
             Name:<br>
             <input type="text" name="name"  size="100" placeholder="Enter name here as it is found in your Passport or Government ID"><br>
             Email:<br>
@@ -99,43 +99,43 @@
             Address<br>
             <input type="text" name="address" size="100" placeholder="Enter your comments here"><br>
             City and Country<br>
-            <input type="text" name="address" size="100" placeholder="Enter text here"><br>
+            <input type="text" name="cityCountry" size="100" placeholder="Enter text here"><br>
             Church/Organization and Position<br>
-            <input type="text" name="address" size="100" placeholder="Enter text here">
+            <input type="text" name="churchPosition" size="100" placeholder="Enter text here">
              
             <p class="form-group">International Delegates should upload a scanned copy of your passport and local delegates should upload government issued ID<br></p>
-            <button type="button" class="btn btn-primary btn-sm">Choose File</button>
+            <input type="file" class="btn btn-primary btn-sm" name= "passport">Choose File</button>
             <p>File must be 10MB or less<br></p>
             
             <p class="form-group">Please upload a digital phot taken in the last six months<br></p>
             
-            <button type="button" class="btn btn-primary btn-sm">Choose File</button>
+            <input type="file" class="btn btn-primary btn-sm" name="photo">Choose File</button>
             <p class="form-group">File must be 10MB or less<br></p>
             
             <p class="form-group">Reference 1 Your Minister or Leader who knows you for the last five years.</p>
             
-            <textarea rows="4" cols="50">
+            <textarea rows="4" cols="50" name="ministerRef" required>
             </textarea>
             
             <p class="form-group">Reference 2 Your Neighbor who knows you for the last five years. *</p>
             
-            <textarea rows="4" cols="50">
+            <textarea rows="4" cols="50" name="neighborRef" required>
             </textarea>
             
             <p class="form-group">I understand and Agree: Check the Box</p>
             
             <label class="container">I understand and agree that registration fee for each Seminar is USD $200 for local and international candidates and it is non-refundable as it goes towards logistics and processing of my application. I must attend the seminar without fail once I reach US after stamping of visa. In addition all the international delegates pay hotel fee of $200 on or before arrival. I will be responsible for my travel and accommodation after the seminar.
-            <input type="checkbox" checked="checked">
+            <input type="checkbox" checked="checked" required>
             <span class="checkmark"></span>
             </label><br>
             
             
             <br>Click Donante Button above to Pay and Complete or Just click SUbmit to pay later:<br>
-            <input type="text" name="click"  size="100" placeholder="Enter name here as it is found in your Passport or Government ID"><br>
+            <input type="text" name="click"  size="100" placeholder="Enter name here as it is found in your Passport or Government ID" required><br>
             <br>Name:<br>
-            <input type="text" name="name2"  size="100" placeholder="Enter text here"><br>
+            <input type="text" name="name2"  size="100" placeholder="Enter text here" required><br>
             
-            <br><button type="button" class="btn btn-primary btn-lg">Submit</button>
+            <br><input type="submit" class="btn btn-primary btn-lg">Submit</button>
         </form> 
     </div>
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

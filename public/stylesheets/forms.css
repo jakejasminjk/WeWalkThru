@@ -234,6 +234,8 @@ div.dropdown2 {
     float: left;
     padding-top: 10px;
     padding-right: 20px;
+    width: 170px;
+    height: 170px;
 }
 
 .logo h2 {
@@ -290,3 +292,4 @@ footer .phone {
     padding-bottom: 5px;
     line-height: 7px;
 }
+
