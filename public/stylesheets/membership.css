@@ -272,19 +272,9 @@ form br {
     text-align: left;
 }
 
-.body-container {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    background-color: white;
-    width: 1400px;
-    margin-left: 50px;
-    margin-top: -32px;
-    margin-bottom: 0px;
-}
-
 .header2 {
-    padding-top: 35px;
-    line-height: 20px;
+    padding-top: 25px;
+    line-height: 60px;
     font-family: Lato;
     font-size: 48px;
     margin-left: 0px;
@@ -297,16 +287,22 @@ form br {
     margin-top: 9px;
 }
 
-
-.header3 {
+.center {
     font-family: Lato;
-    color: rgb(255, 0, 0);
+    font-size: 24px;
+    color: #FF0000;
     font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
-    padding-bottom: 15px;
-    padding-top: 15px;
+}
+
+.body-container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: white;
+    width: 1400px;
+    margin-left: 50px;
+    margin-top: -32px;
+    margin-bottom: 0px;
 }
 
 .body {
@@ -315,25 +311,11 @@ form br {
     font-size: 16px;
     line-height: 20px;
     width: 1400px;
-    text-align: left;
+    text-align: center;
     margin-left: 0px auto;
     padding-left: 300px;
     padding-right: 300px;
     padding-bottom: 15px;
-}
-
-.list {
-    padding-top: 15px;
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 20px;
-    width: 1000px;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-bottom: 0px;
 }
 
 .franchise {
@@ -343,10 +325,6 @@ form br {
     padding-bottom: 15px;
     margin-bottom: 0px;
     font-size: 16px;
-}
-
-li {
-    padding-bottom: 5px;
 }
 
 footer {
