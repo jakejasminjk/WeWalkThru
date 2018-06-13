@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
 app.set("view engine", "html");
 
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
     res.status(200);
     res.sendFile('home.html', { root : VIEWS });
 });
@@ -58,15 +58,15 @@ app.get('/ministers-2030', (req,res) => {
     res.sendFile('ministers-2030.html', {root : VIEWS});
 });
 
-app.get('leaders-2030', (req,res) => {
+app.get('/leaders-2030', (req,res) => {
     res.sendFile('leaders-2030.html', {root : VIEWS});
 });
 
-app.get('association', (req,res) => {
+app.get('/association', (req,res) => {
     res.sendFile('association.html', {root : VIEWS});
 });
 
-app.get('association-membership', (req,res) => {
+app.get('/association-membership', (req,res) => {
     res.sendFile('association-membership.html', {root : VIEWS});
 });
 
