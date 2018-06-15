@@ -16,11 +16,6 @@ app.get('/home', (req, res) => {
     res.sendFile('home.html', { root : VIEWS });
 });
 
-app.get('/test', (req, res) => {
-    res.status(200);
-    res.sendFile('test.html', { root : VIEWS });
-});
-
 //----------------------------------------
 //About us
 //----------------------------------------
@@ -124,54 +119,6 @@ app.get('/association-membership', (req,res) => {
     res.sendFile('association-membership.html', {root : VIEWS});
 });
 
-app.post('/association-membership', (req,res) => {
-    let name = req.body.name;
-    let clientEmail = req.body.email;
-    let phone = req.body.phone;
-    let address = req.body.address;
-    let cityCountry = req.body.cityCountry;
-    let churchPosition = req.body.churchPosition;
-    let chooseSem = req.body.chooseSem;
-    
-    //files
-    let passport = req.body.passport;
-    let photo = req.body.photo;
-    
-    let ministerRef = req.body.ministerRef;
-    let neighborRef = req.body.neighborRef;
-    
-    let to = 'CLIENT EMAIL';
-    let transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'NEED CLIENTS USERNAME',
-    pass: 'NEED CLIENTS EMAIL PASSWORD'
-  }
-});
-    let mailOptions = {
-        from: clientEmail,
-        to: to, 
-        subject: `Association registration from ${name}, ${clientEmail}`,
-        text: `Phone number: ${phone}, Address: ${address}, City and Country: ${cityCountry}, 
-        Church and Position: ${churchPosition}, Chosen Seminar Date: ${chooseSem}`,
-        attachments: {   // stream as an attachment
-        filename: 'text4.txt',
-        content: fs.createReadStream('file.txt')
-    }
-    }
-    
-    transporter.sendMail(mailOptions, function(error, response){
-        if(error){
-            console.log(error);
-            res.redirect('/association-membership');
-        }else{
-            res.redirect('/home');
-        }
-    });
-    
- 
-
-})
 
 //----------------------------------
 //INITIATIVES
@@ -200,54 +147,6 @@ app.get('/seminars-registration', (req, res) => {
     res.sendFile('seminars-registration.html', {root: VIEWS});
 });
 
-app.post('/seminars-registration', (req,res) => {
-    let name = req.body.name;
-    let clientEmail = req.body.email;
-    let phone = req.body.phone;
-    let address = req.body.address;
-    let cityCountry = req.body.cityCountry;
-    let churchPosition = req.body.churchPosition;
-    let chooseSem = req.body.chooseSem;
-    
-    //files
-    let passport = req.body.passport;
-    let photo = req.body.photo;
-    
-    let ministerRef = req.body.ministerRef;
-    let neighborRef = req.body.neighborRef;
-    
-    let to = 'CLIENT EMAIL';
-    let transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'NEED CLIENTS USERNAME',
-    pass: 'NEED CLIENTS EMAIL PASSWORD'
-  }
-});
-    let mailOptions = {
-        from: clientEmail,
-        to: to, 
-        subject: `Semaniar registration from ${name}, ${clientEmail}`,
-        text: `Phone number: ${phone}, Address: ${address}, City and Country: ${cityCountry}, 
-        Church and Position: ${churchPosition}, Chosen Seminar Date: ${chooseSem}`,
-        attachments: {   // stream as an attachment
-        filename: 'text4.txt',
-        content: fs.createReadStream('file.txt')
-    }
-    }
-    
-    transporter.sendMail(mailOptions, function(error, response){
-        if(error){
-            console.log(error);
-            res.redirect('/seminars-registration');
-        }else{
-            res.redirect('/home');
-        }
-    });
-    
- 
-
-})
 
 app.get('/seminary', (req, res) => {
     res.sendFile('seminary.html', {root: VIEWS});
@@ -280,50 +179,16 @@ app.get('/contact-us', (req, res) => {
    res.sendFile('contact-us.html', {root:VIEWS}); 
 });
 
-app.post('/contact-us', (req,res) => {
-    let name = req.body.name
-    let clientEmail = req.body.email
-    let subject = req.body.subject
-    let message = req.body.message
-    
-    let to = 'CLIENT EMAIL';
-    let transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'NEED CLIENTS USERNAME',
-    pass: 'NEED CLIENTS EMAIL PASSWORD'
-  }
-});
-   
-     let mailOptions = {
-        from: clientEmail,
-        to: to, 
-        subject: subject,
-        text: message
-    }
-    transporter.sendMail(mailOptions, function(error, response){
-        if(error){
-            console.log(error);
-            res.redirect('/contact');
-        }else{
-            res.redirect('/home');
-        }
-    });
-    
- 
-
+app.get('/donate501', (req, res) => {
+   res.sendFile('donate501.html', {root:VIEWS}); 
 });
 
-app.get('/donate-501c3', (req, res) => {
-   res.sendFile('donate-501c3.html', {root:VIEWS}); 
+app.get('/yourprivacy', (req, res) => {
+   res.sendFile('yourprivacy.html', {root:VIEWS}); 
 });
 
-app.get('/your-privacy', (req, res) => {
-   res.sendFile('your-privacy.html', {root:VIEWS}); 
-});
-
-app.get('/our-policy', (req, res) => {
-   res.sendFile('our-policy.html', {root:VIEWS}); 
+app.get('/ourpolicies', (req, res) => {
+   res.sendFile('ourpolicies.html', {root:VIEWS}); 
 });
 
 app.get('/join-email', (req, res) => {
