@@ -363,7 +363,8 @@ footer .phone {
 
 #fillerSpace{
     height: 300px;
-=======
+}
+
 .container {
     background-color: rgb(204, 204, 204);
     min-width: 1500px;
@@ -434,12 +435,7 @@ div.dropdown2 {
 }
         
 /* Add a red background color to navbar links on hover */
-.navbar2 a:hover {
-    background-color: white;
-}
-.dropdown2:hover .dropbtn2 {
-    background-color: white;
-}
+
 /* Dropdown content (hidden by default) */
 .dropdown-content2 {
     display: none;
