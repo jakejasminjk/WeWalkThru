@@ -4,11 +4,12 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="/stylesheets/contact-us.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/join-email.css">
         <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet">
     </head>
     <body>
+        
          <div class="navbar2">
             <div class="bigtitle">
             <a href="/home"><h1 class="bigtitle">InterChristian</h1></a>
@@ -38,7 +39,7 @@
         </div>
         </div>
         <div class="dropdown2">
-        <a href="/initiatives.html" class="dropbtn2">INITIATIVES </a>
+        <a href="/initiatives" class="dropbtn2">INITIATIVES </a>
         <div class="dropdown-content2">
             <a href="/fellowship">FELLOWSHIP</a>
             <a href="/festivals">FESTIVALS</a>
@@ -54,7 +55,7 @@
         </div>
         </div>
         <div class="dropdown2">
-        <a href="/contact-us" class="dropbtn2">CONTACT US</a>
+        <a href="/contact-us.html" class="dropbtn2">CONTACT US</a>
         <div class="dropdown-content2">
             <a href="/donate501">DONATE 501C3</a>
             <a href="/yourprivacy">YOUR PRIVACY</a>
@@ -66,40 +67,59 @@
         
         
         </div> 
-        <h1 class = "header">Initiatives International</h1>
-        <h2 class = "subheader">A Membership Movement United To Serve</h2>
-        <h1 class = "page title">Contact Us</h1>
-        <h1 class = "body header">We want to hear from you</h1>
-        <p>Dear Friends</p>
-        <p>Thank you for taking time to visit our website. Please stay in touch with us. Whatever "it" is, we want to hear it. Whether 
-        you need more information on our Initiatives and Services, want us to reach out to your Church and Community, please feel free 
-        to write few lines and hit the submit button at the bottom, one of us will be able to call you or email you.</p>
+
+        
+        
+        
+        
+       
+        <div class="container-fluid">
+        <div class = "logo">
+            <img src = "http://nebula.wsimg.com/2ef6cf8437299c8413d38fe35c5f6681?AccessKeyId=0EB55C264061E955F24A&disposition=0&alloworigin=1">
+            <h1 class = "header">Initiatives International</h1>
+            <h2 class = "subheader">A Membership Movement United To Serve</h2>
+            <p>A 501c3 Tax Exempted Religious Organization</p>
+            <h1 id = "page-title">Contact Us</h1>
+        </div>
+        <h3 class = "body-header">We want to hear from you</h3>
+        <p class = "letter">Dear Friends, </p>
+        <p class = "letter">Thank you for taking time to visit our website. We like to stay in touch with you and keep you informed of all the good things that happens because of your good will and prayers. We also like to see if we can be of assistance in your life in any way possible. Whatever "it" is, we want to hear it. Whether you need more information on our Initiatives and Services, want us to reach out to you, your Church and Community, please feel free to write few lines and hit the submit button at the bottom, one of us will be able to call you or email you.</p>
         <p>Paul Rajan</p>
         <p>CEO</p>
-        <p>InterChristian International</p>
+        <p class = "signature">InterChristian International</p>
         
-        <form method="post" action="/contact-us">
-            <input id="formData" type="text" name="name" required placeholder = "Name"/>
-            <input id="formData" type="email" name="email" required placeholder = "Email"/>
-            <input id="formData" type="text" name="subject" required placeholder = "Subect"/>
-            <input id="formData" type="textarea" name="message" required placeholder = "Message"/>
-            <div>
-                <input type="submit" value="Submit"/>
-            </div>
-            
-        </form>
+         <form>
+            Name:<br>
+            <input type="text" name="name" placeholder="Enter name here"><br>
+            Email:<br>
+            <input type="text" name="email" placeholder="Enter email here"><br>
+            Subject:<br>
+            <input type="text" name="subject" placeholder="Enter text here"><br>
+            Message:<br>
+            <input type="text" name="msg" placeholder="Enter your comments here"><br><br>
+             
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        </form> 
+    </div>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        
     </body>
-    <footer>
+    <footer class="foot">
         <div class = "copyright">
             <h4>Copyright © InterChristian International</h4>
             <h4>All rights reserved</h4>
         </div>
-        <div class = "contact info">
+        <div class = "mailing">
             <h4>InterChristian International Office:</h4>
             <h4>116 Village Blvd, Suite 200, Princeton, NJ 08540</h4>
             <h4>United States</h4>
+        </div>
+        <div class = "phone">
             <h4>Phone: +1.609.489.5173, Fax: +1.609.489.5174</h4>
             <h4>Email: office@interchristian.org</h4> 
         </div>
     </footer>
 </html>
+    
