@@ -16,6 +16,11 @@ app.get('/home', (req, res) => {
     res.sendFile('home.html', { root : VIEWS });
 });
 
+app.get('/test', (req, res) => {
+    res.status(200);
+    res.sendFile('test.html', { root : VIEWS });
+});
+
 //----------------------------------------
 //About us
 //----------------------------------------
