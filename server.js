@@ -48,7 +48,7 @@ app.get('/center', (req, res) => {
 //Memberships
 //----------------------------------
 app.get('/memberships', (req,res) => {
-    res.sendFile('membership.html', {root : VIEWS});
+    res.sendFile('memberships.html', {root : VIEWS});
 });
 
 app.get('/council', (req,res) => {
