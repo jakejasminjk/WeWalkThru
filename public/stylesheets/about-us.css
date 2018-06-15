@@ -95,9 +95,7 @@ div.dropdown2 {
 }
         
 /* Add a grey background color to dropdown links on hover */
-.dropdown-content a {
-    background-color: #ddd;
-}
+
 /* Show the dropdown menu on hover */
 .dropdown2:hover .dropdown-content2 {
     display: block;
