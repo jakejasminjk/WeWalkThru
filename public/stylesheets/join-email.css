@@ -62,12 +62,7 @@ div.dropdown2 {
 }
         
 /* Add a red background color to navbar links on hover */
-.navbar2 a:hover {
-    background-color: gray;
-}
-.dropdown2:hover .dropbtn2 {
-    background-color: white;
-}
+
 /* Dropdown content (hidden by default) */
 .dropdown-content2 {
     display: none;
