@@ -1,5 +1,5 @@
 .container {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(204, 204, 204);
     min-width: 1500px;
     width:100%;
 }
@@ -17,10 +17,12 @@
 }
 .bigtitle {
     color: rgb(55,125,34);
+    font-weight: bold;
 }
 /* Links inside the navbar */
 .navbar2 {
     background-color: white;
+    font-weight: bold;
 }
 .navbar2 a {
     float: left;
@@ -244,6 +246,7 @@ h3 {
     font-family: Lato;
     font-size: 36px;
 }
+
 footer {
     padding-top: 10px;
     background-image: url('http://nebula.wsimg.com/5dd7be0e9ae87db2605889317553ee4f?AccessKeyId=531592D248B589D87A56&disposition=0&alloworigin=1');
@@ -254,15 +257,27 @@ footer {
     position: relative;
     padding-left: 10px;
     overflow-x: hidden;
+    width: 100%;
+    max-width: 1400px;
+    margin-left: 50px;
+    height: 150px;
 }
+
+footer h4 {
+    font-size: 14px;
+}
+
 footer img {
     float:left;
     padding-right: 20px;
+    height: 100px;
 }
+
 footer .mailing {
     padding-bottom: 10px;
     line-height:7px;
 }
+
 footer .copyright{
     padding-bottom: 0px;
     line-height: 9px;
@@ -271,7 +286,13 @@ footer .copyright{
     right: 0;
     position: absolute;
     padding-right: 10px;
+    width: 190px;
 }
+
+footer .copyright h4 {
+    font-size: 14px;
+}
+
 footer .phone {
     padding-bottom: 5px;
     line-height: 7px;
