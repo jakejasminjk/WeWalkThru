@@ -24,6 +24,13 @@ body {
     color: rgb(55,125,34);
     font-weight: bold;
 }
+
+@media screen and (max-width: 1130px){
+    
+    .bigtitle {
+        display: none;
+    }
+}
 /* Links inside the navbar */
 .navbar2 {
     background-color: white;
@@ -255,6 +262,10 @@ form br {
     font-weight: bold;
 }
 
+.body-text {
+    padding-top: 20px;
+}
+
 .logo h6 {
     font-family: Lato;
     padding-right: 500px;
@@ -283,7 +294,6 @@ form br {
     min-width: 1000px;
     margin: 0px auto;
     margin-top: -15px;
-    
 }
 
 .header2 {
