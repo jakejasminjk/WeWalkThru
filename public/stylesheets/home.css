@@ -24,6 +24,13 @@ body {
     color: rgb(55,125,34);
     font-weight: bold;
 }
+
+@media screen and (max-width: 1130px){
+    
+    .bigtitle {
+        display: none;
+    }
+}
 /* Links inside the navbar */
 .navbar2 {
     background-color: white;
