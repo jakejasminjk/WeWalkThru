@@ -304,6 +304,8 @@ form br {
     color: #FF0000;
     font-weight: bold;
     text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .body-container {
