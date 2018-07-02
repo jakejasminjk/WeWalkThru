@@ -1,22 +1,36 @@
 .container {
-    background-color: rgb(255, 255, 255);
-    min-width: 1500px;
+    background-color: rgb(204, 204, 204);
+    max-width: 1600px;
+    min-width: 1050px;
     width:100%;
 }
 
+body {
+    max-width: 1600px;
+    min-width: 1000px;
+}
+
 .navbar2 {
-    width: 100%;
-    /*max-width:100%;*/
-    max-width: 1400px;
+    width: 95%;
+    min-width: 1000px;
+    max-width: 1600px;
     overflow: hidden;
     background-color: #333;
     font-family: Lato, sans-serif;
     font-weight: 900;
-    margin-left: 50px;
-    
+    margin: 0px auto;
 }
+
 .bigtitle {
     color: rgb(55,125,34);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1130px){
+    
+    .bigtitle {
+        display: none;
+    }
 }
 /* Links inside the navbar */
 .navbar2 {
@@ -68,7 +82,9 @@ div.dropdown2 {
 }
         
 /* Add a red background color to navbar links on hover */
-
+.dropdown2:hover .dropbtn2 {
+    background-color: white;
+}
 /* Dropdown content (hidden by default) */
 .dropdown-content2 {
     display: none;
@@ -78,7 +94,6 @@ div.dropdown2 {
     max-width: 140px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    margin-top: 70px;
 }
 /* Links inside the dropdown */
 .dropdown-content2 a{
@@ -168,23 +183,22 @@ form br {
     height: 50%;
     max-width: 1300px;
 }
+
 .logo {
-    width: 100%;
-    height: 50%;
-    max-width: 1400px;
+    width: 95%;
+    max-width: 1600px;
     padding-bottom: 0px;
     background-image: url(http://nebula.wsimg.com/5dd7be0e9ae87db2605889317553ee4f?AccessKeyId=531592D248B589D87A56&disposition=0&alloworigin=1);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     color: white;
-    padding-left: 20px;
-    height: 100%;
-    padding-top: 5px;
-    padding-bottom: 15px;
     border-left: 243px;
     overflow-x: hidden;
-    margin-left: 50px;
+    margin: 0px auto;
+    min-width: 1000px;
+    padding-left: 20px;
 }
+
 .btn {
     color: white;
 }
@@ -270,14 +284,15 @@ form br {
 .body-container {
     padding-top: 0px;
     background-color: white;
-    width: 1400px;
-    margin-left: 50px;
-    margin-top: -32px;
+    width: 95%;
+    max-width: 1600px;
+    min-width: 1000px;
+    margin: 0px auto;
+    margin-top: -15px;
 }
 
 .header2 {
     padding-top: 35px;
-    line-height: 20px;
     font-family: Lato;
     font-size: 48px;
     margin-left: 0px;
@@ -302,124 +317,72 @@ form br {
     padding-right: 300px;
 }
 
+.text1 {
+    margin: 0px auto;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-size: 16px;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 270px);
-    grid-template-rows: repeat(1, 450px);
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(1, 220px);
     grid-row-gap: 0px;
     grid-column-gap: 0px;
-    padding-left: 40px;
     padding-bottom: 0px;
     overflow-x: hidden;
-    margin-bottom 0px;
+    overflow-y: hidden;
     background-color: white;
-    width: 1400px;
-    margin-left: 0px;
-    margin-top: 30px;
+    max-width: 1600px;
+    width: 95%;
+    margin: 0px auto;
     padding-top: 30px;
 }
 
 .grid2 {
     display: grid;
-    grid-template-columns: repeat(4, 270px);
-    grid-template-rows: repeat(1, 250px);
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 300px;
     grid-row-gap: 0px;
     grid-column-gap: 0px;
-    padding-left: 145px;
     padding-bottom: 0px;
     overflow-x: hidden;
-    margin-bottom 0px;
     background-color: white;
-    width: 1400px;
-    margin-left: 0px;
-    margin-top: -170px;
+    width: 95%;
+    margin: 0px auto;
     padding-top: 0px;
+    max-width: 1600px;
 }
 
 .grid img {
     border: 5px solid #50abd2;
-    height: 200px;
-}
-
-.grid .header-1 {
-    height: 110px;
-    color: black;
-    font-family: Lato;
-    text-align: center;
-    width: 480px;
-    padding-bottom: 20px;
+    height: 150px;
+    overflow-y: hidden;
+    margin: 0px auto;
 }
 
 .grid h3 {
     color: black;
-    font-size: 20px;
-    padding-bottom: 15px;       
+    font-size: 20px;     
 }
 
-.grid .header-2 {
-    height: 110px;
-    font-family: Lato;
-    color: white;
+.grid .header1 {
     text-align: center;
-    width: 480px;
 }
-
-.grid .header-3 {
-    height: 110px;
-    font-family: Lato;
-    color: white;
-    text-align: center;
-    width: 480px;
-}
-
-.grid .header-4 {
-    height: 110px;
-    font-family: Lato;
-    color: white;
-    text-align: center;
-    width: 480px;
-}
-
 
 .grid2 p {
     padding: 0px;
     margin: 0px;
+    text-align: center;
+    width: 100%;
 }
 
-.grid2 .body-1 {
-    height: 110px;
-    color: black;
-    font-family: Lato;
-    text-align: center;
-    width: 230px;
-    padding-left: 33px;
-}
-
-.grid2 .body-2 {
-    height: 110px;
-    font-family: Lato;
-    color: black;
-    text-align: center;
-    width: 230px;
-    padding-left: 33px;
-}
-
-.grid2 .body-3 {
-    height: 110px;
-    font-family: Lato;
-    color: black;
-    text-align: center;
-    width: 230px;
-    padding-left: 40px;
-}
-
-.grid2 .body-4 {
-    height: 110px;
-    font-family: Lato;
-    color: black;
-    text-align: center;
-    width: 230px;
-    padding-left: 40px;
+.grid2 .body1 {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 footer {
@@ -432,9 +395,11 @@ footer {
     position: relative;
     padding-left: 10px;
     overflow-x: hidden;
-    width: 100%;
-    max-width: 1400px;
-    margin-left: 50px;
+    width: 95%;
+    min-width: 1000px;
+    max-width: 1600px;
+    margin: 0px auto;
+    height: 150px;
 }
 
 footer img {
@@ -455,6 +420,15 @@ footer .copyright{
     right: 0;
     position: absolute;
     padding-right: 10px;
+    width: 190px;
+}
+
+footer h4 {
+    font-size: 14px;
+}
+
+footer .copyright h4 {
+    font-size: 14px;
 }
 
 footer .phone {
